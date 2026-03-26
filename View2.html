@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator App</title>
+    
+    
+    <link rel="stylesheet" href="styles-for-mainpart2.css">
+    
+      <link rel="stylesheet" href="styles-for-introductionSection3.css">
+    <link rel="stylesheet" href="styles-for-skillsSection2.css">
+    <link rel="stylesheet" href="styles-for-projectsSection2.css">
+    <link rel="stylesheet" href="styles-for-contactSection3.css">
+    
+    
+  </head>
+  <body>
+    
+    <main class="view-container"></main>
+    
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    
+    
+    <script src="IntroductionSection2.jsx" type="text/babel"></script>
+    <script src="IntroductionComponent3.jsx" type="text/babel"></script>
+    <script src="SkillsComponent.jsx" type="text/babel"></script>
+    <script src="SkillsSection.jsx" type="text/babel"></script>
+    <script src="ProjectsSection.jsx" type="text/babel"></script>
+    <script src="ProjectComponent.jsx" type="text/babel"></script>
+    <script src="ContactSection.jsx" type="text/babel"></script>
+    
+    <script src="ContactComponent2.jsx" type="text/babel"></script>
+    <script src="InputValidator.js"></script>
+    <script type="text/babel">
+      
+
+
+       function App(){
+        const [values,setValues]=React.useState({
+         name:"",
+         email:"",
+         message:""
+        });
+        const [errors,setErrors]=React.useState({
+         name:"",
+         email:"",
+         message:""
+        });
+        function handleChangeOfInput(field){
+          return (event)=>{
+            const newValue=event.target.value;
+            const newValues={...values,[field]:newValue};
+            setValues(newValues);
+            const newError="";
+            const newErrors={...errors,[field]:newError};
+            setErrors(newErrors);
+          }
+        }
+        function handleButtonClick(){
+         console.log(values);  
+          var newErrors=InputValidator.validateAll(values);
+          setErrors(newErrors);
+        }
+        function contactMeClick(){
+         document.getElementById("contact-section").
+         scrollIntoView({behavior:"smooth"});
+        }
+         return(
+          <main className="mainPart">
+             
+                <section className="section-for-IntroductionSection">
+                 <IntroductionSection2
+                  onClick={contactMeClick} 
+                 />  
+               </section>
+               <section className="section-for-SkillsSection">
+                <SkillsSection />
+               </section>
+              <section className="section-for-ProjectsSection"> 
+              <ProjectsSection onClick={contactMeClick}  />
+              </section>
+              { <section className="section-for-ContactSection" id="contact-section"> 
+              <ContactSection values={values} errors={errors} 
+              inputFunction={handleChangeOfInput} buttonFunction={handleButtonClick}  />
+              </section>}
+          </main>
+
+        )
+       }
+      const container = document.querySelector('.view-container');
+      ReactDOM.createRoot(container).render(<App />);
+    </script>
+  </body>
+</html>
