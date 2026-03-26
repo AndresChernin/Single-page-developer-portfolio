@@ -1,0 +1,199 @@
+:root{
+  --red-borders:5px solid red;
+  --blue-borders:3px solid blue;
+  --fat-white-borders: 2px solid white;
+  --white-borders: 1px solid white;
+  --white-grey-color: rgb(241, 237, 237);
+  --hell-grey-color:rgb(199, 194, 194);
+  --black-grey-color:rgb(36, 34, 34);
+  --main-black-color:rgb(24, 24, 24);
+  --underline-color:rgb(4, 241, 150);
+  --white-line: 2px solid white;
+  --very-first-top-padding:3.5vh;
+
+  --container-destop-width:85%;
+  --container-tablet-width:100%;
+
+  
+
+  --font-main:"SpaceGrotesk", monospace;
+  --padding-for-links:2.5vw;
+}
+
+body{
+  min-height:300vh;
+    margin:0;
+    font-family:var(--font-main);
+}
+/*.view-container{
+  min-height:100vh;
+  width:95vw;
+  display:flex;
+  justify-content: center;
+  align-items:flex-start;
+  border:var(--red-borders);
+  padding:0;
+  margin:0;
+}*/
+.view-container{
+  
+  width:100%;
+  
+}
+.mainPart{
+  min-height:10vh;
+  width:100%;
+  padding:0;
+  margin:0;
+  border:var(--blue-borders);
+}
+.class-introductionSection{
+ border:none;
+ background-color: var(--main-black-color);
+ width:100%;
+ /*min-height: 40vh;*/
+ display:flex;
+ justify-content: center;
+ 
+ padding:0;
+ margin:0;
+ /*padding-top:var(--very-first-top-padding);*/
+ min-height: 30vh;
+ padding-bottom:3.125rem;
+ 
+ 
+}
+.class-skillsSection{
+ /*border:var(--fat-white-borders);*/
+ width:100%;
+ min-height: 20vh;
+ background-color: var(--main-black-color);
+ display:flex;
+ justify-content: center;
+ padding-bottom:3.125rem;
+}
+.class-projectsSection{
+ border:none;
+ width:100%;
+ min-height:50vh;
+ background-color: var(--main-black-color);
+ display:flex;
+ justify-content: center;
+ padding-bottom: 3.125rem;
+}
+.class-contactSection{
+ border:var(--white-borders);
+ background-color: var(--black-grey-color);
+ width:100%;
+ min-height: 50vh;
+ display:flex;
+ justify-content: center;
+ 
+}
+
+.class-text-size1{
+  font-weight: 500;
+    font-size:0.813rem;
+    font-style:inherit;
+}
+
+.class-text-size10{
+    font-weight: 500;
+    font-size:0.813rem;
+    font-style:inherit;
+    color:var(--hell-grey-color);
+  }
+.class-text-size11{
+  font-weight: 700;
+    font-size:0.813rem;
+    font-style:inherit;
+}
+.class-text-size2{
+  font-size:0.938rem;
+  font-weight: 600;
+  font-style: inherit;
+  
+}
+.class-text-size20{
+  font-size:0.938rem;
+  font-weight: 500;
+  font-style: inherit;
+  color:var(--hell-grey-color);
+  
+  
+}
+.class-text-size22{
+  font-size:1.25rem;
+  font-weight: 500;
+  font-style: inherit;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.class-text-size3{
+  font-size:1.25rem;
+  font-weight: 500;
+  font-style: inherit;
+  padding-bottom:0;
+  margin-bottom:0;
+  
+}
+.class-text-size4{
+  font-weight: 600;
+  font-size:2.5rem;
+  font-style:inherit;
+}
+.class-text-size5{
+  font-weight: 700;
+    font-size:3.125rem;
+    font-style:inherit;
+    margin:0;
+    padding:0;
+}
+.class-no-padding-no-margin{
+  padding:0;
+  margin:0;
+}
+.classUnderline-under{
+  text-decoration: underline solid var(--underline-color);
+  text-underline-position: under;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 5px;
+}
+
+
+.class-small-img{
+    height:1.25rem;
+    width:1.25rem;
+}
+.class-white-grey{
+  color:var(--white-grey-color);
+}
+a{
+  display: flex;
+  align-items: center;
+}
+@media(max-width:40rem){
+  .class-introductionSection{
+    justify-content: center;
+  }
+  .class-skillsSection{
+    justify-content: center;
+    margin:0;
+  }
+}
+@media(max-width:25rem){
+  .class-introductionSection{
+    justify-content: center;
+    align-items: center;
+  }
+  .class-skillsSection{
+    justify-content: center;
+    margin:0;
+  }
+}
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 700;
+  font-style:normal;
+}
