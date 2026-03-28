@@ -45,7 +45,7 @@ body{
   width:100%;
   padding:0;
   margin:0;
-  border:var(--blue-borders);
+  border:none;
 }
 .class-introductionSection{
  border:none;
@@ -82,7 +82,7 @@ body{
  padding-bottom: 3.125rem;
 }
 .class-contactSection{
- border:var(--white-borders);
+ border:none;
  background-color: var(--black-grey-color);
  width:100%;
  min-height: 50vh;
