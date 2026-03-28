@@ -15,7 +15,7 @@ return(
                {/*<ProjectComponent picture="thumbnail-project-1" extension="webp" title="DESIGN PORTFOLIO"
                 language="HTML  CSS"
                 project="VIEW PROJECT" code="VIEW CODE" />*/}
-               <ProjectComponent picture="mortgage-calculator" extension="png"title="MORTGAGE CALCULATOR"
+               <ProjectComponent picture="mortgage-calculator" extension="png" title="MORTGAGE CALCULATOR"
                 language="HTML  CSS  JAVASCRIPT"
                 project="VIEW PROJECT" code="VIEW CODE" 
                 projectLink="https://andreschernin.github.io/mortgage-repayment-calculator/view/MyView2.html"
@@ -23,15 +23,17 @@ return(
                
               </div>
               <div className="projects">
-                <ProjectComponent picture="age-calculator" extension="png"title="AGE CALCULATOR" 
+                <ProjectComponent picture="age-calculator" extension="png" title="AGE CALCULATOR" 
                language="HTML  CSS  JAVASCRIPT  REACT" 
                 project="VIEW PROJECT" code="VIEW CODE"
                 projectLink="https://andreschernin.github.io/Age-Calculator-App/View3.html" 
                 codeLink="https://github.com/AndresChernin/Age-Calculator-App"/>
-              {/* <ProjectComponent picture="thumbnail-project-4" extension="webp"
-               title="ENTERTAINMENT WEB APP" language="HTML  CSS  JAVASCRIPT"
-                project="VIEW PROJECT" code="VIEW CODE" />
-               <ProjectComponent picture="thumbnail-project-5" extension="webp"
+               <ProjectComponent picture="developer-project" extension="jpg"
+               title="DEVELOPER PORTFOLIO" language="HTML  CSS  JAVASCRIPT REACT"
+                project="VIEW PROJECT" code="VIEW CODE" 
+                projectLink="https://andreschernin.github.io/Single-page-developer-portfolio/View2.html"
+                codeLink="https://github.com/AndresChernin/Single-page-developer-portfolio"/>
+              {/* <ProjectComponent picture="thumbnail-project-5" extension="webp"
                title="MEMORY GAME" 
                language="HTML CSS JAVASCRIPT"
                 project="VIEW PROJECT" code="VIEW CODE" /> 

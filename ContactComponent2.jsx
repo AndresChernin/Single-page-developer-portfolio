@@ -36,7 +36,7 @@ function ContactComponent2({values, errors,onChange, onClick}){
          {/*2 row*/ }
          <div className="grid-my-wisch-part">
            <p className="class-text-size1 class-white-grey">I would love to hear about your project
-            and how I could help. Please fill in the form, and I'll get back to you
+            and how I could help. Please fill in the form, and I&apos;ll get back to you
             as soon as possible.
            </p>
           </div>
@@ -66,7 +66,8 @@ function ContactComponent2({values, errors,onChange, onClick}){
           
           <div className="grid-send-message"> 
             <button className="classUnderline-under btn-send class-text-size11"
-            onClick={onClick}>
+            onClick={onClick}
+            type="button">
             SEND MESSAGE
             </button>
           </div>

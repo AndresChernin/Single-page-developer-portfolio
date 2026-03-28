@@ -72,16 +72,18 @@ function IntroductionComponent3({onClick}) {
 </div>
         {/*3nd row*/}
        <div className="greeting-part">
-        <p>Nice to meet you! I'm <span className="classUnderline">Andres Chernin</span>.</p>
+        <p>Nice to meet you! I&apos;m <span className="classUnderline">Andres Chernin</span>.</p>
         <p className="introduction-part">Based in the Germany, 
-         I'm a front-end developer <br/>passionate about building 
+         I&apos;m a front-end developer <br/>passionate about building 
          accessible web apps<br/> that users love. </p>
-         <p className="contact-part classUnderline-under"
-          onClick={onClick}>CONTACT ME</p>
-         {/*<button className="classUnderline-under btn-send contact-part"
+         {/*<p className="contact-part classUnderline-under"
+          onClick={onClick}>CONTACT ME</p>*/}
+         <button
+             type="button" 
+             className="classUnderline-under btn-send contact-part"
              onClick={onClick}>
             CONTACT ME
-            </button>*/}
+            </button>
        </div>
        <div></div>
        <div></div>
